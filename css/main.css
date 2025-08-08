@@ -1325,7 +1325,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ffffd6;
+    background: #2540b8;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1673,7 +1673,7 @@ pre code {
   white-space: nowrap;
 }
 .footer {
-  color: #00f;
+  color: #f00;
   font-size: 0.875em;
   padding: 20px 0;
   transition: 0.2s ease-in-out;
@@ -2771,7 +2771,7 @@ header.header {
 }
 /* 背景图片设置 */
 body {
-  background-image: url("https://s3.bmp.ovh/imgs/2025/07/30/47de455336bc3da6.jpeg");
+  background-image: url("https://s3.bmp.ovh/imgs/2025/08/08/bc6bb92bdad3ba98.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -2783,80 +2783,24 @@ body {
 :link {
   cursor: url("/images/pointer.cur"), auto;
 }
-/* 相册 */
-.photos-page {
-  margin-top: -50px;
-}
-.photos-list {
-  display: flex;
-  flex-direction: row;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.photos-column a {
-  border-bottom: 0px;
-}
-.photos-item {
-  margin-bottom: 50px;
-}
-.photos-item p {
-  margin: -25px auto -10px;
-  max-width: 50%;
-  text-align: center;
-  font-size: 15px;
-  color: #222;
-  background: rgba(255,255,255,0.3);
-  border-radius: 7px;
-  border: 1px solid #222;
-  box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3);
-}
-.photos-column a img {
-  height: 250px;
-  width: 300px;
-  object-fit: cover;
-}
-.img-list {
-  display: flex;
-  flex-direction: column;
-}
-.img-column {
-  display: flex;
-  flex-direction: row;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.img-column a {
-  border-bottom: 0px;
-}
-.img-column a img {
-  height: 280px;
-  width: 330px;
-  object-fit: scale-down;
-}
 /* 侧边栏透明度 */
 header.header {
   background: rgba(255,255,255,0.8);
 }
 .sidebar {
-  opacity: 0.9;
+  opacity: 0.7;
 }
 /* 文章透明度 */
 .main-inner {
-  opacity: 0.9;
+  opacity: 0.7;
 }
 /* 搜索透明度 */
 .popup {
-  opacity: 0.9;
+  opacity: 0.7;
 }
 /* 代码块透明度 */
 figure.highlight {
-  opacity: 0.9;
+  opacity: 0.7;
 }
 /* 友情链接 */
 .flinks-block .flinks-header {
