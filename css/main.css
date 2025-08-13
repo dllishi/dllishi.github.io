@@ -1405,7 +1405,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ac4a14;
+    background: #e4ffaf;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3269,20 +3269,4 @@ a.badge img {
   color: #ff1493 !important;
   font-size: 32px !important;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-}
-/* 自定义回到顶部样式 */
-.back-to-top {
-  width: 70px;
-  height: 900px;
-  top: -900px;
-  bottom: unset;
-  transition: all 0.5s ease-in-out;
-  background: url("/images/scroll.png");
-}
-.back-to-top > i {
-  display: none;
-}
-.back-to-top.back-to-top-on {
-  bottom: unset;
-  top: calc(100vh - 900px - 200px);
 }
