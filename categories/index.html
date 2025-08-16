@@ -14,8 +14,9 @@
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"dllishi.dpdns.org","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.24.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"night-owl","dark":"night-owl"},"prism":{"light":"prism-material-light","dark":"prism-night-owl"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":true,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer=""></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dllishi.dpdns.org","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.24.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"night-owl","dark":"night-owl"},"prism":{"light":"prism-material-light","dark":"prism-night-owl"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":true,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"bounceln","post_block":"zoomInUp","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"zoomInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer=""></script>
 
     <meta name="description" content="📔家乡资讯 | 📚汇集整理">
 <meta property="og:type" content="website">
@@ -50,7 +51,7 @@
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer=""></script>
-<script src="/js/utils.js" defer=""></script><script src="/js/sidebar.js" defer=""></script><script src="/js/next-boot.js" defer=""></script>
+<script src="/js/utils.js" defer=""></script><script src="/js/motion.js" defer=""></script><script src="/js/sidebar.js" defer=""></script><script src="/js/next-boot.js" defer=""></script>
 
   
 
@@ -78,7 +79,7 @@
   </noscript>
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage">
+<body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
 
   <main class="main">
@@ -149,18 +150,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -214,7 +215,7 @@
       },
       legend: {
         top: 'bottom',
-        data: ["李氏家族","东山李氏","李氏族谱"],
+        data: ["李氏家族","李氏族谱"],
         textStyle: {
           color: color
         }
@@ -233,7 +234,7 @@
         radius: ['15%', '90%'],
         center: ['50%', '55%'],
         sort: 'desc',
-        data: [{"name":"李氏家族","value":2,"path":"categories/李氏家族/","id":"cmebcoip300049rs68mj6brwb","parentId":"0"},{"name":"东山李氏","value":2,"path":"categories/东山李氏/","id":"cmebcoipu000c9rs64r3v0vzl","parentId":"0"},{"name":"李氏族谱","value":1,"path":"categories/李氏族谱/","id":"cmebcoiq5000h9rs684vcb2p8","parentId":"0"}],
+        data: [{"name":"李氏家族","value":1,"path":"categories/李氏家族/","id":"cmedvloiw0009gqs611w77slv","parentId":"0"},{"name":"李氏族谱","value":1,"path":"categories/李氏族谱/","id":"cmedvloj6000bgqs68gwce2lj","parentId":"0"}],
         itemStyle: {
           borderColor: '#fff',
           borderWidth: 2,
@@ -255,7 +256,7 @@
           color: color,
           formatter: '{b} : {c} ({d}%)'
         },
-        data: [{"name":"李氏家族","value":2,"path":"categories/李氏家族/","id":"cmebcoip300049rs68mj6brwb","parentId":"0"},{"name":"东山李氏","value":2,"path":"categories/东山李氏/","id":"cmebcoipu000c9rs64r3v0vzl","parentId":"0"},{"name":"李氏族谱","value":1,"path":"categories/李氏族谱/","id":"cmebcoiq5000h9rs684vcb2p8","parentId":"0"}],
+        data: [{"name":"李氏家族","value":1,"path":"categories/李氏家族/","id":"cmedvloiw0009gqs611w77slv","parentId":"0"},{"name":"李氏族谱","value":1,"path":"categories/李氏族谱/","id":"cmedvloj6000bgqs68gwce2lj","parentId":"0"}],
         itemStyle: {
           emphasis: {
             shadowBlur: 10,
@@ -274,10 +275,10 @@
     });
   </script><div class="category-all-page">
   <div class="category-all-title">
-    目前共计 3 个分类
+    目前共计 2 个分类
   </div>
   <div class="category-all">
-    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%B8%9C%E5%B1%B1%E6%9D%8E%E6%B0%8F/">东山李氏</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9D%8E%E6%B0%8F%E5%AE%B6%E6%97%8F/">李氏家族</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9D%8E%E6%B0%8F%E6%97%8F%E8%B0%B1/">李氏族谱</a><span class="category-list-count">1</span></li></ul>
+    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9D%8E%E6%B0%8F%E5%AE%B6%E6%97%8F/">李氏家族</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9D%8E%E6%B0%8F%E6%97%8F%E8%B0%B1/">李氏族谱</a><span class="category-list-count">1</span></li></ul>
   </div>
 </div>
 

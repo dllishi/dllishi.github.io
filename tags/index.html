@@ -14,8 +14,9 @@
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"dllishi.dpdns.org","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.24.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"night-owl","dark":"night-owl"},"prism":{"light":"prism-material-light","dark":"prism-night-owl"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":true,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer=""></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dllishi.dpdns.org","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.24.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"night-owl","dark":"night-owl"},"prism":{"light":"prism-material-light","dark":"prism-night-owl"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":true,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"bounceln","post_block":"zoomInUp","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"zoomInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer=""></script>
 
     <meta name="description" content="📔家乡资讯 | 📚汇集整理">
 <meta property="og:type" content="website">
@@ -50,7 +51,7 @@
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer=""></script>
-<script src="/js/utils.js" defer=""></script><script src="/js/sidebar.js" defer=""></script><script src="/js/next-boot.js" defer=""></script>
+<script src="/js/utils.js" defer=""></script><script src="/js/motion.js" defer=""></script><script src="/js/sidebar.js" defer=""></script><script src="/js/next-boot.js" defer=""></script>
 
   
 
@@ -78,7 +79,7 @@
   </noscript>
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage">
+<body itemscope="" itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
 
   <main class="main">
@@ -149,18 +150,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -205,7 +206,7 @@
     var tagsChart = echarts.init(document.getElementById('tags-chart'), 'light');
     var tagsOption = {
       title: {
-        text: 'Top 9 标签统计图',
+        text: 'Top 6 标签统计图',
         x: 'center',
         textStyle: {
           color: color
@@ -232,7 +233,7 @@
             color: color
           }
         },
-        data: ["文化名人","李氏文化","红色基因","湖南宁乡","东城李氏","族谱摘录","湖南长沙","灌塘李氏","家族情怀"]
+        data: ["湖南长沙","灌塘李氏","家族历史","湖南宁乡","东城李氏","族谱文化"]
       },
       yAxis: {
         name: '文章篇数',
@@ -260,7 +261,7 @@
       series: [{
         name: '文章篇数',
         type: 'bar',
-        data: [{"name":"文化名人","value":3,"path":"tags/文化名人/"},{"name":"李氏文化","value":3,"path":"tags/李氏文化/"},{"name":"红色基因","value":3,"path":"tags/红色基因/"},{"name":"湖南宁乡","value":1,"path":"tags/湖南宁乡/"},{"name":"东城李氏","value":1,"path":"tags/东城李氏/"},{"name":"族谱摘录","value":1,"path":"tags/族谱摘录/"},{"name":"湖南长沙","value":1,"path":"tags/湖南长沙/"},{"name":"灌塘李氏","value":1,"path":"tags/灌塘李氏/"},{"name":"家族情怀","value":1,"path":"tags/家族情怀/"}],
+        data: [{"name":"湖南长沙","value":1,"path":"tags/湖南长沙/"},{"name":"灌塘李氏","value":1,"path":"tags/灌塘李氏/"},{"name":"家族历史","value":1,"path":"tags/家族历史/"},{"name":"湖南宁乡","value":1,"path":"tags/湖南宁乡/"},{"name":"东城李氏","value":1,"path":"tags/东城李氏/"},{"name":"族谱文化","value":1,"path":"tags/族谱文化/"}],
         itemStyle: {
           borderRadius: [5, 5, 0, 0],
           color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
@@ -304,10 +305,10 @@
     });
   </script><div class="tag-cloud">
   <div class="tag-cloud-title">
-    目前共计 9 个标签
+    目前共计 6 个标签
   </div>
   <div class="tag-cloud-tags">
-    <a href="/tags/%E4%B8%9C%E5%9F%8E%E6%9D%8E%E6%B0%8F/" style="font-size: 12px;" class="tag-cloud-0">东城李氏</a> <a href="/tags/%E5%AE%B6%E6%97%8F%E6%83%85%E6%80%80/" style="font-size: 12px;" class="tag-cloud-0">家族情怀</a> <a href="/tags/%E6%96%87%E5%8C%96%E5%90%8D%E4%BA%BA/" style="font-size: 30px;" class="tag-cloud-10">文化名人</a> <a href="/tags/%E6%97%8F%E8%B0%B1%E6%91%98%E5%BD%95/" style="font-size: 12px;" class="tag-cloud-0">族谱摘录</a> <a href="/tags/%E6%9D%8E%E6%B0%8F%E6%96%87%E5%8C%96/" style="font-size: 30px;" class="tag-cloud-10">李氏文化</a> <a href="/tags/%E6%B9%96%E5%8D%97%E5%AE%81%E4%B9%A1/" style="font-size: 12px;" class="tag-cloud-0">湖南宁乡</a> <a href="/tags/%E6%B9%96%E5%8D%97%E9%95%BF%E6%B2%99/" style="font-size: 12px;" class="tag-cloud-0">湖南长沙</a> <a href="/tags/%E7%81%8C%E5%A1%98%E6%9D%8E%E6%B0%8F/" style="font-size: 12px;" class="tag-cloud-0">灌塘李氏</a> <a href="/tags/%E7%BA%A2%E8%89%B2%E5%9F%BA%E5%9B%A0/" style="font-size: 30px;" class="tag-cloud-10">红色基因</a>
+    <a href="/tags/%E4%B8%9C%E5%9F%8E%E6%9D%8E%E6%B0%8F/" style="font-size: 12px;" class="tag-cloud-0">东城李氏</a> <a href="/tags/%E5%AE%B6%E6%97%8F%E5%8E%86%E5%8F%B2/" style="font-size: 12px;" class="tag-cloud-0">家族历史</a> <a href="/tags/%E6%97%8F%E8%B0%B1%E6%96%87%E5%8C%96/" style="font-size: 12px;" class="tag-cloud-0">族谱文化</a> <a href="/tags/%E6%B9%96%E5%8D%97%E5%AE%81%E4%B9%A1/" style="font-size: 12px;" class="tag-cloud-0">湖南宁乡</a> <a href="/tags/%E6%B9%96%E5%8D%97%E9%95%BF%E6%B2%99/" style="font-size: 12px;" class="tag-cloud-0">湖南长沙</a> <a href="/tags/%E7%81%8C%E5%A1%98%E6%9D%8E%E6%B0%8F/" style="font-size: 12px;" class="tag-cloud-0">灌塘李氏</a>
   </div>
 </div>
 
