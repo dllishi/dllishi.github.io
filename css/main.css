@@ -1337,7 +1337,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #4d39e0;
+    background: #ffffc6;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3353,6 +3353,40 @@ a.badge img {
   color: rgba(0,0,0,0.1); /* transparent IE 不支持 */
   animation: sliding 30s linear infinite;
 }
+/* 自定义右键菜单样式 */
+#custom-context-menu {
+  position: fixed;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  padding: 8px 0;
+  z-index: 9999;
+  display: none;
+  animation: fadeIn 0.15s ease-out;
+  min-width: 200px;
+}
+#custom-context-menu hr {
+  margin: 5px 0;
+  border: none;
+  border-top: 1px solid #f0f0f0;
+}
+#custom-context-menu .menu-item {
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s;
+}
+#custom-context-menu .menu-item:hover {
+  background: #f0f7ff;
+}
+#custom-context-menu .menu-item i {
+  margin-right: 10px;
+  color: #3498db;
+  width: 20px;
+  text-align: center;
+}
 @keyframes sliding {
   to {
     background-position: -2000vw;
@@ -3361,5 +3395,15 @@ a.badge img {
 @keyframes sliding {
   to {
     background-position: -2000vw;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
   }
 }
