@@ -947,11 +947,6 @@ pre code {
 .post-body .note.danger h6 {
   color: #d9534f;
 }
-.pdfobject-container iframe,
-.pdfobject-container embed {
-  height: 500px;
-  width: 100%;
-}
 .post-body .tabs {
   margin-bottom: 20px;
 }
@@ -1337,7 +1332,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #8f75f7;
+    background: #df32ff;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2046,6 +2041,9 @@ pre code {
 .post-body .exturl .fa {
   font-size: 0.875em;
   margin-left: 4px;
+}
+.post-body figure:not(.highlight) {
+  margin: 0 auto 20px;
 }
 .post-body figure:not(.highlight) figcaption {
   color: #999;
