@@ -178,18 +178,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -248,7 +248,7 @@
     var tagsChart = echarts.init(document.getElementById('tags-chart'), 'light');
     var tagsOption = {
       title: {
-        text: 'Top 3 标签统计图',
+        text: 'Top 6 标签统计图',
         x: 'center',
         textStyle: {
           color: color
@@ -275,7 +275,7 @@
             color: color
           }
         },
-        data: ["中元祭祀","缅怀先祖","传统习俗"]
+        data: ["中元祭祀","缅怀先祖","传统习俗","族谱文化","家族历史","传承记录"]
       },
       yAxis: {
         name: '文章篇数',
@@ -303,7 +303,7 @@
       series: [{
         name: '文章篇数',
         type: 'bar',
-        data: [{"name":"中元祭祀","value":1,"path":"tags/中元祭祀/"},{"name":"缅怀先祖","value":1,"path":"tags/缅怀先祖/"},{"name":"传统习俗","value":1,"path":"tags/传统习俗/"}],
+        data: [{"name":"中元祭祀","value":1,"path":"tags/中元祭祀/"},{"name":"缅怀先祖","value":1,"path":"tags/缅怀先祖/"},{"name":"传统习俗","value":1,"path":"tags/传统习俗/"},{"name":"族谱文化","value":1,"path":"tags/族谱文化/"},{"name":"家族历史","value":1,"path":"tags/家族历史/"},{"name":"传承记录","value":1,"path":"tags/传承记录/"}],
         itemStyle: {
           borderRadius: [5, 5, 0, 0],
           color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
@@ -347,10 +347,10 @@
     });
   </script><div class="tag-cloud">
   <div class="tag-cloud-title">
-    目前共计 3 个标签
+    目前共计 6 个标签
   </div>
   <div class="tag-cloud-tags">
-    <a href="/tags/%E4%B8%AD%E5%85%83%E7%A5%AD%E7%A5%80/" style="font-size: 12px;" class="tag-cloud-0">中元祭祀</a> <a href="/tags/%E4%BC%A0%E7%BB%9F%E4%B9%A0%E4%BF%97/" style="font-size: 12px;" class="tag-cloud-0">传统习俗</a> <a href="/tags/%E7%BC%85%E6%80%80%E5%85%88%E7%A5%96/" style="font-size: 12px;" class="tag-cloud-0">缅怀先祖</a>
+    <a href="/tags/%E4%B8%AD%E5%85%83%E7%A5%AD%E7%A5%80/" style="font-size: 12px;" class="tag-cloud-0">中元祭祀</a> <a href="/tags/%E4%BC%A0%E6%89%BF%E8%AE%B0%E5%BD%95/" style="font-size: 12px;" class="tag-cloud-0">传承记录</a> <a href="/tags/%E4%BC%A0%E7%BB%9F%E4%B9%A0%E4%BF%97/" style="font-size: 12px;" class="tag-cloud-0">传统习俗</a> <a href="/tags/%E5%AE%B6%E6%97%8F%E5%8E%86%E5%8F%B2/" style="font-size: 12px;" class="tag-cloud-0">家族历史</a> <a href="/tags/%E6%97%8F%E8%B0%B1%E6%96%87%E5%8C%96/" style="font-size: 12px;" class="tag-cloud-0">族谱文化</a> <a href="/tags/%E7%BC%85%E6%80%80%E5%85%88%E7%A5%96/" style="font-size: 12px;" class="tag-cloud-0">缅怀先祖</a>
   </div>
 </div>
 
