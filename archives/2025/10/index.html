@@ -20,25 +20,22 @@
 
     <meta name="description" content="📔家庭故事 | 📚汇集整理'">
 <meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="https://dllishi.dpdns.org/categories/index.html">
+<meta property="og:title" content="私人空间">
+<meta property="og:url" content="https://dllishi.dpdns.org/archives/2025/10/index.html">
 <meta property="og:site_name" content="私人空间">
 <meta property="og:description" content="📔家庭故事 | 📚汇集整理'">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-08-12T15:13:18.000Z">
-<meta property="article:modified_time" content="2025-09-21T01:19:36.068Z">
 <meta property="article:author" content="道林李氏">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://dllishi.dpdns.org/categories/">
+<link rel="canonical" href="https://dllishi.dpdns.org/archives/2025/10/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":true,"permalink":"https://dllishi.dpdns.org/categories/index.html","path":"categories/index.html","title":"分类"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"archives/2025/10/index.html","title":""}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>分类 | 私人空间
-</title>
+<title>归档 | 私人空间</title>
   <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
   
 
@@ -100,7 +97,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <p class="site-title">私人空间</p>
+      <h1 class="site-title">私人空间</h1>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">湖南宁乡李氏家族小站</p>
@@ -222,117 +219,174 @@
 
     </div>
 
-    <div class="main-inner page posts-expand">
+    <div class="main-inner archive posts-collapse">
 
 
-    
-    
-    
-    <div class="post-block" lang="zh-CN"><header class="post-header">
-
-<h1 class="post-title" itemprop="name headline">分类
-</h1>
-
-<div class="post-meta-container">
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-        <div id="categories-chart" data-parent="true" style="height: 300px; padding: 10px;"></div>
-  <script id="categoriesChart">
+  
+  
+  
+  <div class="post-block">
+    <div class="post-content">
+    <div id="posts-chart" data-start="2025-01" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
+  <script id="postsChart">
     var color = '#007AFF'
-    var categoriesChart = echarts.init(document.getElementById('categories-chart'), 'light');
-    var categoryParentFlag = false
-    var categoriesOption = {
+    var postsChart = echarts.init(document.getElementById('posts-chart'), 'light');
+    var postsOption = {
       title: {
-        text: '文章分类统计图',
+        text: '文章发布统计图',
         x: 'center',
         textStyle: {
           color: color
         }
       },
-      legend: {
-        top: 'bottom',
-        data: ["族谱摘录","家庭往事"],
-        textStyle: {
-          color: color
-        }
-      },
       tooltip: {
-        trigger: 'item'
+        trigger: 'axis'
       },
-      series: []
-    };
-    categoriesOption.series.push(
-      categoryParentFlag ? 
-      {
-        nodeClick :false,
-        name: '文章篇数',
-        type: 'sunburst',
-        radius: ['15%', '90%'],
-        center: ['50%', '55%'],
-        sort: 'desc',
-        data: [{"name":"族谱摘录","value":12,"path":"categories/族谱摘录/","id":"cuid3Mog4cSJiO-MItwL3EFdK","parentId":"0"},{"name":"家庭往事","value":1,"path":"categories/家庭往事/","id":"cuid3p2Kkx69ProsWfSHoxBtT","parentId":"0"}],
-        itemStyle: {
-          borderColor: '#fff',
-          borderWidth: 2,
-          emphasis: {
-            focus: 'ancestor',
-            shadowBlur: 10,
-            shadowOffsetX: 0,
-            shadowColor: 'rgba(255, 255, 255, 0.5)'
-          }
-        }
-      }
-      :
-      {
-        name: '文章篇数',
-        type: 'pie',
-        radius: [30, 80],
-        roseType: 'area',
-        label: {
-          color: color,
-          formatter: '{b} : {c} ({d}%)'
+      xAxis: {
+        name: '日期',
+        type: 'category',
+        boundaryGap: false,
+        nameTextStyle: {
+          color: color
         },
-        data: [{"name":"族谱摘录","value":12,"path":"categories/族谱摘录/","id":"cuid3Mog4cSJiO-MItwL3EFdK","parentId":"0"},{"name":"家庭往事","value":1,"path":"categories/家庭往事/","id":"cuid3p2Kkx69ProsWfSHoxBtT","parentId":"0"}],
-        itemStyle: {
-          emphasis: {
-            shadowBlur: 10,
-            shadowOffsetX: 0,
-            shadowColor: 'rgba(255, 255, 255, 0.5)'
+        axisTick: {
+          show: false
+        },
+        axisLabel: {
+          show: true,
+          color: color
+        },
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: color
+          }
+        },
+        data: ["2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10"]
+      },
+      yAxis: {
+        name: '文章篇数',
+        type: 'value',
+        nameTextStyle: {
+          color: color
+        },
+        splitLine: {
+          show: false
+        },
+        axisTick: {
+          show: false
+        },
+        axisLabel: {
+          show: true,
+          color: color
+        },
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: color
           }
         }
-      }
-    )
-    categoriesChart.setOption(categoriesOption);
+      },
+      series: [{
+        name: '文章篇数',
+        type: 'line',
+        smooth: true,
+        lineStyle: {
+            width: 0
+        },
+        showSymbol: false,
+        itemStyle: {
+          opacity: 1,
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+            offset: 0,
+            color: 'rgba(128, 255, 165)'
+          },
+          {
+            offset: 1,
+            color: 'rgba(1, 191, 236)'
+          }])
+        },
+        areaStyle: {
+          opacity: 1,
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+            offset: 0,
+            color: 'rgba(128, 255, 165)'
+          }, {
+            offset: 1,
+            color: 'rgba(1, 191, 236)'
+          }])
+        },
+        data: [0,0,0,0,0,0,0,0,11,2],
+        markLine: {
+          data: [{
+            name: '平均值',
+            type: 'average',
+            label: {
+              color: color
+            }
+          }]
+        }
+      }]
+    };
+    postsChart.setOption(postsOption);
     window.addEventListener('resize', () => { 
-      categoriesChart.resize();
+      postsChart.resize();
     });
-    categoriesChart.on('click', 'series', (event) => {
-      if(event.data.path) window.location.href = '/' + event.data.path;
+    postsChart.on('click', 'series', (event) => {
+      if (event.componentType === 'series') window.location.href = '/archives/' + event.name.replace('-', '/');
     });
-  </script><div class="category-all-page">
-  <div class="category-all-title">
-    目前共计 2 个分类
-  </div>
-  <div class="category-all">
-    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AE%B6%E5%BA%AD%E5%BE%80%E4%BA%8B/">家庭往事</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%8F%E8%B0%B1%E6%91%98%E5%BD%95/">族谱摘录</a><span class="category-list-count">12</span></li></ul>
-  </div>
-</div>
-
+  </script>
+      <div class="collection-title">
+        <span class="collection-header">嗯..! 目前共计 13 篇日志。 继续努力。</span>
       </div>
+
       
-      
-      
+    <div class="collection-year">
+      <span class="collection-header">2025<span class="collection-year-count">13</span></span>
     </div>
 
-    
-    
+  <article itemscope="" itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated" datetime="2025-10-03T19:06:34+08:00" content="2025-10-03">
+          10-03
+        </time>
+      </div>
 
+      <div class="post-title">
+          <a class="post-title-link" href="/posts/4f8f855b.html" itemprop="url">
+            <span itemprop="name">周氏正章公支系行实传</span>
+          </a>
+      </div>
+
+      
+    </header>
+  </article>
+
+  <article itemscope="" itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated" datetime="2025-10-03T17:44:06+08:00" content="2025-10-03">
+          10-03
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/posts/a0b46b2f.html" itemprop="url">
+            <span itemprop="name">周氏祥瑞公传</span>
+          </a>
+      </div>
+
+      
+    </header>
+  </article>
+
+
+    </div>
+  </div>
+  
+  
+  
 
 </div>
   </main>
