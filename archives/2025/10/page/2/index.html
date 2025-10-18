@@ -20,25 +20,22 @@
 
     <meta name="description" content="📔小镇故事 | 📚汇集整理'">
 <meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="https://dllishi.dpdns.org/tags/index.html">
+<meta property="og:title" content="一亩三分地">
+<meta property="og:url" content="https://dllishi.dpdns.org/archives/2025/10/page/2/index.html">
 <meta property="og:site_name" content="一亩三分地">
 <meta property="og:description" content="📔小镇故事 | 📚汇集整理'">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-08-12T15:13:48.000Z">
-<meta property="article:modified_time" content="2025-09-21T01:19:36.848Z">
 <meta property="article:author" content="道林李氏">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://dllishi.dpdns.org/tags/">
+<link rel="canonical" href="https://dllishi.dpdns.org/archives/2025/10/page/2/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":true,"permalink":"https://dllishi.dpdns.org/tags/index.html","path":"tags/index.html","title":"标签"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"archives/2025/10/page/2/index.html","title":""}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>标签 | 一亩三分地
-</title>
+<title>归档 | 一亩三分地</title>
   <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
   
 
@@ -100,7 +97,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <p class="site-title">一亩三分地</p>
+      <h1 class="site-title">一亩三分地</h1>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">我的个人博客小站</p>
@@ -222,42 +219,33 @@
 
     </div>
 
-    <div class="main-inner page posts-expand">
+    <div class="main-inner archive posts-collapse">
 
 
-    
-    
-    
-    <div class="post-block" lang="zh-CN"><header class="post-header">
-
-<h1 class="post-title" itemprop="name headline">标签
-</h1>
-
-<div class="post-meta-container">
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-        <div id="tags-chart" data-length="10" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
-  <script id="tagsChart">
+  
+  
+  
+  <div class="post-block">
+    <div class="post-content">
+    <div id="posts-chart" data-start="2025-01" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
+  <script id="postsChart">
     var color = '#007AFF'
-    var tagsChart = echarts.init(document.getElementById('tags-chart'), 'light');
-    var tagsOption = {
+    var postsChart = echarts.init(document.getElementById('posts-chart'), 'light');
+    var postsOption = {
       title: {
-        text: 'Top 10 标签统计图',
+        text: '文章发布统计图',
         x: 'center',
         textStyle: {
           color: color
         }
       },
-      tooltip: {},
+      tooltip: {
+        trigger: 'axis'
+      },
       xAxis: {
-        name: '标签',
+        name: '日期',
         type: 'category',
+        boundaryGap: false,
         nameTextStyle: {
           color: color
         },
@@ -266,8 +254,7 @@
         },
         axisLabel: {
           show: true,
-          color: color,
-          interval: 0
+          color: color
         },
         axisLine: {
           show: true,
@@ -275,16 +262,16 @@
             color: color
           }
         },
-        data: ["家族历史","传承记录","姓氏族谱","族谱文化","乡镇名片","地域文化","人文历史","中元祭祀","缅怀先祖","传统习俗"]
+        data: ["2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10"]
       },
       yAxis: {
         name: '文章篇数',
         type: 'value',
-        splitLine: {
-          show: false
-        },
         nameTextStyle: {
           color: color
+        },
+        splitLine: {
+          show: false
         },
         axisTick: {
           show: false
@@ -302,10 +289,14 @@
       },
       series: [{
         name: '文章篇数',
-        type: 'bar',
-        data: [{"name":"家族历史","value":17,"path":"tags/家族历史/"},{"name":"传承记录","value":17,"path":"tags/传承记录/"},{"name":"姓氏族谱","value":11,"path":"tags/姓氏族谱/"},{"name":"族谱文化","value":6,"path":"tags/族谱文化/"},{"name":"乡镇名片","value":4,"path":"tags/乡镇名片/"},{"name":"地域文化","value":4,"path":"tags/地域文化/"},{"name":"人文历史","value":4,"path":"tags/人文历史/"},{"name":"中元祭祀","value":1,"path":"tags/中元祭祀/"},{"name":"缅怀先祖","value":1,"path":"tags/缅怀先祖/"},{"name":"传统习俗","value":1,"path":"tags/传统习俗/"}],
+        type: 'line',
+        smooth: true,
+        lineStyle: {
+            width: 0
+        },
+        showSymbol: false,
         itemStyle: {
-          borderRadius: [5, 5, 0, 0],
+          opacity: 1,
           color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
             offset: 0,
             color: 'rgba(128, 255, 165)'
@@ -315,18 +306,17 @@
             color: 'rgba(1, 191, 236)'
           }])
         },
-        emphasis: {
-          itemStyle: {
-            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-              offset: 0,
-              color: 'rgba(128, 255, 195)'
-            },
-            {
-              offset: 1,
-              color: 'rgba(1, 211, 255)'
-            }])
-          }
+        areaStyle: {
+          opacity: 1,
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+            offset: 0,
+            color: 'rgba(128, 255, 165)'
+          }, {
+            offset: 1,
+            color: 'rgba(1, 191, 236)'
+          }])
         },
+        data: [0,0,0,0,0,0,0,0,11,11],
         markLine: {
           data: [{
             name: '平均值',
@@ -338,31 +328,50 @@
         }
       }]
     };
-    tagsChart.setOption(tagsOption);
+    postsChart.setOption(postsOption);
     window.addEventListener('resize', () => { 
-      tagsChart.resize();
+      postsChart.resize();
     });
-    tagsChart.on('click', 'series', (event) => {
-      if(event.data.path) window.location.href = '/' + event.data.path;
+    postsChart.on('click', 'series', (event) => {
+      if (event.componentType === 'series') window.location.href = '/archives/' + event.name.replace('-', '/');
     });
-  </script><div class="tag-cloud">
-  <div class="tag-cloud-title">
-    目前共计 10 个标签
-  </div>
-  <div class="tag-cloud-tags">
-    <a href="/tags/%E4%B8%AD%E5%85%83%E7%A5%AD%E7%A5%80/" style="font-size: 12px;" class="tag-cloud-0">中元祭祀</a> <a href="/tags/%E4%B9%A1%E9%95%87%E5%90%8D%E7%89%87/" style="font-size: 16.5px;" class="tag-cloud-3">乡镇名片</a> <a href="/tags/%E4%BA%BA%E6%96%87%E5%8E%86%E5%8F%B2/" style="font-size: 16.5px;" class="tag-cloud-3">人文历史</a> <a href="/tags/%E4%BC%A0%E6%89%BF%E8%AE%B0%E5%BD%95/" style="font-size: 30px;" class="tag-cloud-10">传承记录</a> <a href="/tags/%E4%BC%A0%E7%BB%9F%E4%B9%A0%E4%BF%97/" style="font-size: 12px;" class="tag-cloud-0">传统习俗</a> <a href="/tags/%E5%9C%B0%E5%9F%9F%E6%96%87%E5%8C%96/" style="font-size: 16.5px;" class="tag-cloud-3">地域文化</a> <a href="/tags/%E5%A7%93%E6%B0%8F%E6%97%8F%E8%B0%B1/" style="font-size: 25.5px;" class="tag-cloud-8">姓氏族谱</a> <a href="/tags/%E5%AE%B6%E6%97%8F%E5%8E%86%E5%8F%B2/" style="font-size: 30px;" class="tag-cloud-10">家族历史</a> <a href="/tags/%E6%97%8F%E8%B0%B1%E6%96%87%E5%8C%96/" style="font-size: 21px;" class="tag-cloud-5">族谱文化</a> <a href="/tags/%E7%BC%85%E6%80%80%E5%85%88%E7%A5%96/" style="font-size: 12px;" class="tag-cloud-0">缅怀先祖</a>
-  </div>
-</div>
-
+  </script>
+      <div class="collection-title">
+        <span class="collection-header">嗯..! 目前共计 22 篇日志。 继续努力。</span>
       </div>
+
       
-      
-      
+    <div class="collection-year">
+      <span class="collection-header">2025<span class="collection-year-count">22</span></span>
     </div>
 
-    
-    
+  <article itemscope="" itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated" datetime="2025-10-03T17:44:06+08:00" content="2025-10-03">
+          10-03
+        </time>
+      </div>
 
+      <div class="post-title">
+          <a class="post-title-link" href="/posts/a0b46b2f.html" itemprop="url">
+            <span itemprop="name">周氏祥瑞公传</span>
+          </a>
+      </div>
+
+      
+    </header>
+  </article>
+
+
+    </div>
+  </div>
+  
+  
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/archives/2025/10/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/2025/10/">1</a><span class="page-number current">2</span>
+  </nav>
 
 </div>
   </main>
