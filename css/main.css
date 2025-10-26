@@ -1334,7 +1334,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #67cf12;
+    background: #c8b852;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2942,6 +2942,7 @@ header.header {
 .menu .menu-item span.exturl {
   padding-left: 0.5rem;
   padding-right: 1rem;
+  border-radius: 1rem;
   font-size: 1rem;
   border: 0.1rem solid #000;
   overflow: hidden;
@@ -2996,6 +2997,12 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+}
+/* 网站标题背景图片 */
+.site-brand-container {
+  background: url("https://s3.bmp.ovh/imgs/2025/08/08/bc6bb92bdad3ba98.jpeg");
+  background-position: 70% 20%;
+  background-size: cover;
 }
 /* 顶部边距 */
 .header,
