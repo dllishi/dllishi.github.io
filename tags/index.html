@@ -181,18 +181,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">27</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">1</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -249,7 +249,7 @@
     var tagsChart = echarts.init(document.getElementById('tags-chart'), 'light');
     var tagsOption = {
       title: {
-        text: 'Top 5 标签统计图',
+        text: 'Top 3 标签统计图',
         x: 'center',
         textStyle: {
           color: color
@@ -276,7 +276,7 @@
             color: color
           }
         },
-        data: ["人文荟萃","历史名人","生平事迹","地域文化","历史遗存"]
+        data: ["地方族谱","家族历史","传承记录"]
       },
       yAxis: {
         name: '文章篇数',
@@ -304,7 +304,7 @@
       series: [{
         name: '文章篇数',
         type: 'bar',
-        data: [{"name":"人文荟萃","value":27,"path":"tags/人文荟萃/"},{"name":"历史名人","value":24,"path":"tags/历史名人/"},{"name":"生平事迹","value":24,"path":"tags/生平事迹/"},{"name":"地域文化","value":3,"path":"tags/地域文化/"},{"name":"历史遗存","value":3,"path":"tags/历史遗存/"}],
+        data: [{"name":"地方族谱","value":1,"path":"tags/地方族谱/"},{"name":"家族历史","value":1,"path":"tags/家族历史/"},{"name":"传承记录","value":1,"path":"tags/传承记录/"}],
         itemStyle: {
           borderRadius: [5, 5, 0, 0],
           color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
@@ -348,10 +348,10 @@
     });
   </script><div class="tag-cloud">
   <div class="tag-cloud-title">
-    目前共计 5 个标签
+    目前共计 3 个标签
   </div>
   <div class="tag-cloud-tags">
-    <a href="/tags/%E4%BA%BA%E6%96%87%E8%8D%9F%E8%90%83/" style="font-size: 30px;" class="tag-cloud-10">人文荟萃</a> <a href="/tags/%E5%8E%86%E5%8F%B2%E5%90%8D%E4%BA%BA/" style="font-size: 21px;" class="tag-cloud-5">历史名人</a> <a href="/tags/%E5%8E%86%E5%8F%B2%E9%81%97%E5%AD%98/" style="font-size: 12px;" class="tag-cloud-0">历史遗存</a> <a href="/tags/%E5%9C%B0%E5%9F%9F%E6%96%87%E5%8C%96/" style="font-size: 12px;" class="tag-cloud-0">地域文化</a> <a href="/tags/%E7%94%9F%E5%B9%B3%E4%BA%8B%E8%BF%B9/" style="font-size: 21px;" class="tag-cloud-5">生平事迹</a>
+    <a href="/tags/%E4%BC%A0%E6%89%BF%E8%AE%B0%E5%BD%95/" style="font-size: 12px;" class="tag-cloud-0">传承记录</a> <a href="/tags/%E5%9C%B0%E6%96%B9%E6%97%8F%E8%B0%B1/" style="font-size: 12px;" class="tag-cloud-0">地方族谱</a> <a href="/tags/%E5%AE%B6%E6%97%8F%E5%8E%86%E5%8F%B2/" style="font-size: 12px;" class="tag-cloud-0">家族历史</a>
   </div>
 </div>
 
@@ -447,14 +447,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">14k</span>
+    <span title="站点总字数">1k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 ≈</span>
-    <span title="站点阅读时长">13 分钟</span>
+    <span title="站点阅读时长">1 分钟</span>
   </span>
 </div><div>
   <a class="badge" target="_blank" href="https://hexo.io/zh-cn/"><img class="badge no-fancybox" alt="框架: Hexo" src="/images/badges/hexo-badge.svg"></a>
