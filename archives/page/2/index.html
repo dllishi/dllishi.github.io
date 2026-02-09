@@ -22,25 +22,22 @@
 
     <meta name="description" content="📔小镇故事 | 📚汇集整理">
 <meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="https://dllishi.dpdns.org/categories/index.html">
+<meta property="og:title" content="一亩三分地">
+<meta property="og:url" content="https://dllishi.dpdns.org/archives/page/2/index.html">
 <meta property="og:site_name" content="一亩三分地">
 <meta property="og:description" content="📔小镇故事 | 📚汇集整理">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-08-12T15:13:18.000Z">
-<meta property="article:modified_time" content="2026-01-19T06:45:35.930Z">
 <meta property="article:author" content="道林李氏">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://dllishi.dpdns.org/categories/">
+<link rel="canonical" href="https://dllishi.dpdns.org/archives/page/2/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":true,"permalink":"https://dllishi.dpdns.org/categories/index.html","path":"categories/index.html","title":"分类"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"archives/page/2/index.html","title":""}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>分类 | 一亩三分地
-</title>
+<title>归档 | 一亩三分地</title>
   <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
   
 
@@ -102,7 +99,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <p class="site-title">一亩三分地</p>
+      <h1 class="site-title">一亩三分地</h1>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">耕耘我的博客小站</p>
@@ -222,179 +219,159 @@
 
     </div>
 
-    <div class="main-inner page posts-expand">
+    <div class="main-inner archive posts-collapse">
 
 
-    
-    
-    
-    <div class="post-block" lang="zh-CN"><header class="post-header">
-
-<h1 class="post-title" itemprop="name headline">分类
-</h1>
-
-<div class="post-meta-container">
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          <div id="categories-chart" data-parent="true" style="height: 300px; padding: 10px;"></div>
-  <script id="categoriesChart">
+  
+  
+  
+  <div class="post-block">
+    <div class="post-content">
+    <div id="posts-chart" data-start="2026-01" style="border-radius: 8px; height: 300px; padding: 10px;"></div>
+  <script id="postsChart">
     var color = '#007AFF'
-    var categoriesChart = echarts.init(document.getElementById('categories-chart'), 'light');
-    var categoryParentFlag = false
-    var categoriesOption = {
+    var postsChart = echarts.init(document.getElementById('posts-chart'), 'light');
+    var postsOption = {
       title: {
-        text: '文章分类统计图',
+        text: '文章发布统计图',
         x: 'center',
         textStyle: {
           color: color
         }
       },
-      legend: {
-        top: 'bottom',
-        data: ["族谱摘录"],
-        textStyle: {
-          color: color
-        }
-      },
       tooltip: {
-        trigger: 'item'
+        trigger: 'axis'
       },
-      series: []
-    };
-    categoriesOption.series.push(
-      categoryParentFlag ? 
-      {
-        nodeClick :false,
-        name: '文章篇数',
-        type: 'sunburst',
-        radius: ['15%', '90%'],
-        center: ['50%', '55%'],
-        sort: 'desc',
-        data: [{"name":"族谱摘录","value":11,"path":"categories/族谱摘录/","id":"cuidT8C5OwcVjfmGgKwo0tpY9","parentId":"0"}],
-        itemStyle: {
-          borderColor: '#fff',
-          borderWidth: 2,
-          emphasis: {
-            focus: 'ancestor',
-            shadowBlur: 10,
-            shadowOffsetX: 0,
-            shadowColor: 'rgba(255, 255, 255, 0.5)'
-          }
-        }
-      }
-      :
-      {
-        name: '文章篇数',
-        type: 'pie',
-        radius: [30, 80],
-        roseType: 'area',
-        label: {
-          color: color,
-          formatter: '{b} : {c} ({d}%)'
+      xAxis: {
+        name: '日期',
+        type: 'category',
+        boundaryGap: false,
+        nameTextStyle: {
+          color: color
         },
-        data: [{"name":"族谱摘录","value":11,"path":"categories/族谱摘录/","id":"cuidT8C5OwcVjfmGgKwo0tpY9","parentId":"0"}],
-        itemStyle: {
-          emphasis: {
-            shadowBlur: 10,
-            shadowOffsetX: 0,
-            shadowColor: 'rgba(255, 255, 255, 0.5)'
+        axisTick: {
+          show: false
+        },
+        axisLabel: {
+          show: true,
+          color: color
+        },
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: color
+          }
+        },
+        data: ["2026-01","2026-02"]
+      },
+      yAxis: {
+        name: '文章篇数',
+        type: 'value',
+        nameTextStyle: {
+          color: color
+        },
+        splitLine: {
+          show: false
+        },
+        axisTick: {
+          show: false
+        },
+        axisLabel: {
+          show: true,
+          color: color
+        },
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: color
           }
         }
-      }
-    )
-    categoriesChart.setOption(categoriesOption);
+      },
+      series: [{
+        name: '文章篇数',
+        type: 'line',
+        smooth: true,
+        lineStyle: {
+            width: 0
+        },
+        showSymbol: false,
+        itemStyle: {
+          opacity: 1,
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+            offset: 0,
+            color: 'rgba(128, 255, 165)'
+          },
+          {
+            offset: 1,
+            color: 'rgba(1, 191, 236)'
+          }])
+        },
+        areaStyle: {
+          opacity: 1,
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+            offset: 0,
+            color: 'rgba(128, 255, 165)'
+          }, {
+            offset: 1,
+            color: 'rgba(1, 191, 236)'
+          }])
+        },
+        data: [0,11],
+        markLine: {
+          data: [{
+            name: '平均值',
+            type: 'average',
+            label: {
+              color: color
+            }
+          }]
+        }
+      }]
+    };
+    postsChart.setOption(postsOption);
     window.addEventListener('resize', () => { 
-      categoriesChart.resize();
+      postsChart.resize();
     });
-    categoriesChart.on('click', 'series', (event) => {
-      if(event.data.path) window.location.href = '/' + event.data.path;
+    postsChart.on('click', 'series', (event) => {
+      if (event.componentType === 'series') window.location.href = '/archives/' + event.name.replace('-', '/');
     });
-  </script><div class="category-all-page">
-  <div class="category-all-title">
-    目前共计 1 个分类
-  </div>
-  <div class="category-all">
-    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%8F%E8%B0%B1%E6%91%98%E5%BD%95/">族谱摘录</a><span class="category-list-count">11</span></li></ul>
-  </div>
-</div>
-
+  </script>
+      <div class="collection-title">
+        <span class="collection-header">嗯..! 目前共计 11 篇日志。 继续努力。</span>
       </div>
-      <script type="text/javascript">
-    var alltags = document.getElementsByClassName('tag-cloud-tags');
-    var tags = alltags[0].getElementsByTagName('a');
-    for (var i = tags.length - 1; i >= 0; i--) {
-        var r=Math.floor(Math.random()*100 + 156);
-        var g=Math.floor(Math.random()*100 + 156);
-        var b=Math.floor(Math.random()*100 + 156);
-        tags[i].style.background = "rgb("+r+","+g+","+b+")";
-        tags[i].style.color = getContrastColor(r, g, b);
-    }
-    
-    function getContrastColor(r, g, b) {
-        var yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
-        return yiq >= 150 ? '#222' : '#fff';
-    }
-</script>
 
-<style>
-    .tag-cloud-tags {
-        text-align: center;
-        position: relative; /* 为子元素定位提供基准 */
-    }
-
-    .tag-cloud-tags a {
-        position: relative; /* 为阴影伪元素定位 */
-        border-radius: 6px;
-        padding: 4px 12px;
-        margin: 10px 8px;
-        display: inline-block;
-        font-weight: 600;
-        text-shadow: 0 1px 1px rgba(0,0,0,0.1);
-        border: 1px solid rgba(0,0,0,0.05);
-        transition: all 0.3s ease;
-        background: inherit; /* 继承JS设置的背景色 */
-    }
-
-    /* 模糊阴影伪元素 */
-    .tag-cloud-tags a::after {
-        content: '';
-        position: absolute;
-        top: 10px;
-        left: 0;
-        right: 0;
-        height: 100%;
-        background: inherit;
-        filter: blur(8px);
-        opacity: 0.7;
-        z-index: -1;
-        transition: all 0.3s ease;
-    }
-
-    /* 悬停时放大阴影 */
-    .tag-cloud-tags a:hover {
-        transform: translateY(-2px) scale(1.05);
-    }
-    
-    .tag-cloud-tags a:hover::after {
-        transform: scale(0.95);
-        opacity: 0.9;
-        filter: blur(12px);
-    }
-</style>
       
-      
-      
+    <div class="collection-year">
+      <span class="collection-header">2026<span class="collection-year-count">11</span></span>
     </div>
 
-    
-    
+  <article itemscope="" itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated" datetime="2026-02-05T16:17:08+08:00" content="2026-02-05">
+          02-05
+        </time>
+      </div>
 
+      <div class="post-title">
+          <a class="post-title-link" href="/posts/98e9a80a.html" itemprop="url">
+            <span itemprop="name">报恩寺记</span>
+          </a>
+      </div>
+
+      
+    </header>
+  </article>
+
+
+    </div>
+  </div>
+  
+  
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/archives/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
+  </nav>
 
 </div>
   </main>
